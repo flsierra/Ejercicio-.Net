@@ -1,0 +1,45 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Index.master.vb" Inherits="Ejercicio.Index" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <link rel="stylesheet" type="text/css" href="Estilo.css">
+    <title>Ejercicio ASP.Net</title>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+    <nav id="navegacion">
+			<nav>
+		<ul class="nav">
+		<li><a href="Clientes.aspx">Clientes</a>	
+		</li>
+		<li><a href="Contactos.aspx">Contactos</a>
+			
+		</li>
+            <li><a href=""><strong>Informes</strong></a>
+            <ul>
+                <li><a href="Contactos_Carl.aspx">Los clientes que tiene contactos que su nombre empieza por carl</a></li>
+                <li><a href="Clientes Ordenados.aspx">Clientes ordenados por fecha de creacion</a></li>
+                <li><a href="Cliente_Contactos.aspx">Cliente con más de un contacto</a></li>
+            </ul>
+			</li>
+	</ul>
+	
+			</nav>
+		</nav>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+    </div>
+    
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </form>
+</body>
+    
+</html>
